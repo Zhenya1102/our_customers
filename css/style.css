@@ -1,0 +1,160 @@
+/* ====================== FONTS ======================================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* ====================== Обнуление ======================================*/
+@import "null.css";
+@import "header.css";
+/* ====================== Обнуление ======================================*/
+/* ======================  Независимый блок ======================================*/
+.button {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 9px 35px;
+    background: #F2726F;
+    transition: all 0.3s ease 0s;
+}
+.button:hover {
+    background: #7c3635;
+}
+.button:active {
+    background: #ceb5b5;
+}
+/* ======================  Независимый блок ======================================*/
+html,
+body {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    background: #010001;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+}
+[class*="__container"] {
+    max-width: 1050px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+/* ================================================= header ===================================================== */
+/* ================================================= header ===================================================== */
+/* ================================================= main ======================================================= */
+.main {
+    flex: 1 1 auto;
+}
+.our-customers {
+    margin: 120px 0px 130px 0px;
+}
+.our-customers__container {
+}
+.our-customers__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+@media (max-width:1045px) {
+    .our-customers__body {
+        justify-content: center;
+    }
+}
+.content-header {
+    flex: 0 1 324px;
+}
+@media (max-width:1045px) {
+    .content-header {
+        flex: 0 1 auto;
+    }
+}
+.content-header__subtitle {
+    margin: 0px 0px 33px 44px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #5D62B5;
+    position: relative;
+}
+.content-header__subtitle::before {
+    content: "";
+    background: url("../img/our-customers/icon.svg") no-repeat;
+    width: 28px;
+    height: 27px;
+    position: absolute;
+    top: -3px;
+    left: -44px;
+}
+.content-header__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.17;
+    color: #000000;
+}
+
+.our-customers__cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 24px;
+}
+@media (max-width:1045px) {
+    .our-customers__cards {
+        padding: 0px 0px 0px 0px;
+    }
+}
+.our-customers__card {
+    padding: 50px 44px 40px 43px; 
+    background: #FFFFFF;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+}
+.our-customers__card:hover {
+    box-shadow:0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+    transform: scale(1.1);
+}
+@media (max-width:697px) {
+    .our-customers__cards {
+        justify-content: center;
+    }
+}
+.our-customers__text {
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+    margin: 0px 0px 46px 0px;
+    max-width: 235px;
+}
+.our-customers__specialist {
+    display: flex;
+}
+.our-customers__icon {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    flex: 0 1 48px;
+    min-height: 48px;
+}
+.our-customers__name {
+    padding: 0px 0px 0px 17px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    color: #F2726F;
+    align-self: center;
+}
+/* ================================================= falcon ====================================================== */
+
+/* ================================================= overview ====================================================== */
+/* ================================================= footer ======================================================== */
+
+
+/* ================================================= footer ======================================================== */
